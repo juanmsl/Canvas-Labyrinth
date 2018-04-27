@@ -1,0 +1,22 @@
+$breakpoints: (
+	mobile: 640px,
+	tablet: 768px,
+	laptop: 1024px,
+	pc: 1224px,
+	large: 1824
+);
+
+$map-colors: (
+	body: (
+		bg: black,
+		tx: white
+	),
+	canvas: (
+		bd: #444,
+		bg: radial-gradient(circle, #444, #333)
+	),
+	msn: (
+		bg: rgba(#D1D1D1, 0.7),
+		tx: black
+	)
+);

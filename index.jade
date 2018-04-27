@@ -1,0 +1,42 @@
+doctype html5
+html(lang="es")
+	head
+		title 
+		meta(charset="utf-8")
+		meta(name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1")
+		link(rel="stylesheet" href="css/normalize.css")
+		link(rel="stylesheet" href="css/styles.css")
+	body
+		button(onClick="inicio()")#iniciar.btn Comenzar misión
+		button(onClick="continuar()")#continuar.btn Kage bunshin no jutsu
+		#info
+			#timer
+				.caja#Horas 00
+				.caja#Minutos :00
+				.caja#Segundos :00
+				.caja#Centesimas :00
+			#points 0
+			#controls
+				.item: <input type="radio" name="control" id="keys" checked="checked"> Teclado
+				.item: <input type="radio" name="control" id="mouse"> Mouse
+		#msn
+		audio#theme
+			source(src="resources/audio/naruto_theme.mp3" type="audio/mpeg")
+		header#banner
+			img(src="resources/images/banner.png")
+
+		img(src="resources/images/konoha.jpg").sprite#konoha
+		img(src="resources/images/start.png").sprite#start
+		img(src="resources/images/tree.png").sprite#tree
+		img(src="resources/images/naruto.png").sprite#naruto
+		img(src="resources/images/deidara.png").sprite#deidara
+		img(src="resources/images/hidan.png").sprite#hidan
+		img(src="resources/images/itachi.png").sprite#itachi
+		img(src="resources/images/kakuzu.png").sprite#kakuzu
+		img(src="resources/images/kisame.png").sprite#kisame
+		img(src="resources/images/konan.png").sprite#konan
+		img(src="resources/images/pain.png").sprite#pain
+		img(src="resources/images/tobi.png").sprite#tobi
+		canvas#my-canvas
+		
+	script(src="js/scripts.js")

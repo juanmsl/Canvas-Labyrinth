@@ -1,0 +1,34 @@
+<!DOCTYPE html5>
+<html lang="es">
+  <head>
+    <title> </title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1"/>
+    <link rel="stylesheet" href="css/normalize.css"/>
+    <link rel="stylesheet" href="css/styles.css"/>
+  </head>
+  <body>
+    <button onClick="inicio()" id="iniciar" class="btn">Comenzar misión</button>
+    <button onClick="continuar()" id="continuar" class="btn">Kage bunshin no jutsu</button>
+    <div id="info">
+      <div id="timer">
+        <div id="Horas" class="caja">00</div>
+        <div id="Minutos" class="caja">:00</div>
+        <div id="Segundos" class="caja">:00</div>
+        <div id="Centesimas" class="caja">:00</div>
+      </div>
+      <div id="points">0</div>
+      <div id="controls">
+        <div class="item"><input type="radio" name="control" id="keys" checked="checked"> Teclado</div>
+        <div class="item"><input type="radio" name="control" id="mouse"> Mouse</div>
+      </div>
+    </div>
+    <div id="msn"></div>
+    <audio id="theme">
+      <source src="resources/audio/naruto_theme.mp3" type="audio/mpeg"/>
+    </audio>
+    <header id="banner"><img src="resources/images/banner.png"/></header><img src="resources/images/konoha.jpg" id="konoha" class="sprite"/><img src="resources/images/start.png" id="start" class="sprite"/><img src="resources/images/tree.png" id="tree" class="sprite"/><img src="resources/images/naruto.png" id="naruto" class="sprite"/><img src="resources/images/deidara.png" id="deidara" class="sprite"/><img src="resources/images/hidan.png" id="hidan" class="sprite"/><img src="resources/images/itachi.png" id="itachi" class="sprite"/><img src="resources/images/kakuzu.png" id="kakuzu" class="sprite"/><img src="resources/images/kisame.png" id="kisame" class="sprite"/><img src="resources/images/konan.png" id="konan" class="sprite"/><img src="resources/images/pain.png" id="pain" class="sprite"/><img src="resources/images/tobi.png" id="tobi" class="sprite"/>
+    <canvas id="my-canvas"></canvas>
+  </body>
+  <script src="js/scripts.js"></script>
+</html>

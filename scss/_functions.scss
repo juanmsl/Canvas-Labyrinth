@@ -1,0 +1,18 @@
+@import "variables";
+
+@function image($image) {
+	@return url("../resources/images/" + $image);
+}
+
+@function video($video) {
+	@return url("../resources/videos/" + $video);
+}
+
+@function get-color($section, $propierty) {
+	@if map-has-key($map-colors, $section) {
+		$section-propierties: map-get($map-colors, $section);
+		@if map-has-key($section-propierties, $propierty) {
+			@return map-get($section-propierties, $propierty);
+		}
+	}
+}
